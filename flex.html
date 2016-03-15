@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>任务十：flexbox布局练习</title>
+    <style>
+        .con{display:flex;width: 100%;flex-flow: row wrap;justify-content:space-between;align-items:center }
+        .cot{width: 150px;padding: 20px;}
+        .border_red{border: 1px solid #f00}
+        .border_blue{border: 1px solid #0f0}
+        .cot1{height:120px;}
+        .cot2{height:100px}
+        .cot3{height:40px}
+        .cot4{height:200px;}
+        @media screen and (max-width: 640px){
+            .con{ align-items: flex-start;}
+            .cot4{ order: -1;}
+        }
+    </style>
+</head>
+<body>
+
+
+<div class="con">
+    <div class="cot cot1 border_red"></div>
+    <div class="cot cot2 border_red"></div>
+    <div class="cot cot3 border_red"></div>
+    <div class="cot cot4 border_blue"></div>
+</div>
+</body>
+</html>
